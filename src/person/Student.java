@@ -1,9 +1,10 @@
 package person;
+import java.util.Arrays;
 
 public class Student extends Person {
-    private int numCourses;
-    private String[] courses;
-    private int[] grades;
+    int numCourses;
+    String[] courses;
+    int[] grades;
 
     public Student(String name, String address, int numCourses) {
         super(name, address);

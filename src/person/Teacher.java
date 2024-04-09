@@ -3,20 +3,19 @@ package person;
 
 
 public class Teacher extends Person {
-    private String name;
-    private String address;
-    private int numCourses;
-    private String[] courses;
+    String name;
+    String address;
+    int numCourses;
+    String[] courses;
     public Teacher(String name, String address) {
         this.name = name;
         this.address = address;
         this.numCourses = 0;
-        this.courses = new String[30]; // Số lượng tối đa khóa học
+        this.courses = new String[30];
     }
     public boolean addCourse(String course) {
         for (int i = 0; i < numCourses; i++) {
             if (courses[i].equals(course)) {
-                // Khóa học đã tồn tại
                 return false;
             }
         }
